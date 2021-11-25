@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  items:String[] =  []
+  items:String[] = []
   stuname:String = "";
   enterdate = ""
   CountOfBooks:number = 0
@@ -44,6 +44,12 @@ export class AppComponent {
   addItem(newItem: string) {
     this.items.push(newItem);
   }
+
+
+
+
+
+
 
 
 

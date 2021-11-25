@@ -22,9 +22,40 @@
 <app-child3 [child3prop] ="parent3prop"></app-child3>
 <ul>RETURNED BOOK IDS: <li *ngFor="let item of items">{{item}}</li>
 </ul>
+<a routerLink="Check Book Details">NON-RETURNEES ||</a>
 
-                                                        ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<app-child6 (nameEvent) = "name($event)"></app-child6>
+<router-outlet>
+
+</router-outlet>
+
+<a routerLink = "Student Pending Details">PENDING DETAILS ||</a>
+<router-outlet>
+  
+</router-outlet>
+<a routerLink = "Department Details">DEPARTMENT WISE COVERAGE ||</a>
+<router-outlet></router-outlet>
+
+<a routerLink = "AddBooks">VIEW BOOKS LIST ||</a>
+<router-outlet></router-outlet>
+<a routerLink = "IssuedBooks">VIEW ISSUED BOOKS</a>
+<router-outlet></router-outlet>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<app-child6 (nameEvent)="name($event)"></app-child6>  
+
 <app-child8 (newItemEvent)="addItem($event)"></app-child8>
+
+
 <app-child7 (GetStudentDetails) = "student()"></app-child7>
 

@@ -1,0 +1,38 @@
+<body>
+    <table>
+      <tr>
+      <th>StudentName</th>
+      <th>StudentID</th>
+      <th>Department</th>
+      
+     
+      </tr>
+      
+          
+          <tr *ngFor = "let product of dept"
+           [ngClass] = "{
+               'text-sucess': product.Department === 'CSE',
+               'text-primary': product.Department === 'IT',
+               'text-danger': product.Department === 'ECE'
+
+           }">
+           
+     
+  
+           
+            <td>{{product.StudentName}}</td>
+            <td>{{product.StudentID}}</td>
+            <td>{{product.Department}}</td>
+            
+  
+           
+           
+          
+          </tr>
+          
+          
+      
+        </table>
+  
+  </body>      
+

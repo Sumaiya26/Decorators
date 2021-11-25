@@ -1,0 +1,33 @@
+<body>
+  <table>
+    <div>
+      <tr>
+    <th>Student_Name       </th>
+    <th>Student_ID          </th>
+    <th>Department       </th>
+    <th>Book_ID_Taken     </th>
+      </tr>
+    </div>
+    
+        
+      <tr *ngFor = "let product of details">
+      <div *ngIf = "product.Returned === false">  
+   
+
+          <div>
+          <td> {{product.StudentName}} </td>
+          <td> {{product.StudentID}} </td>
+          <td> {{product.Department}} </td>
+          <td> {{product.Book_ID_Taken}} </td>
+
+          </div>
+         
+         
+      </div>
+      </tr>
+        
+        
+    
+  </table>
+
+</body>      

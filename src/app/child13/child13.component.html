@@ -1,0 +1,13 @@
+<ul *ngFor = "let books of issued"
+[ngSwitch] = "books.given">
+<li *ngSwitchCase="'Returned'"
+class = "text-sucess">{{books.Book_ID}} {{books.Book_Name}} {{books.given}}
+
+</li>
+<li *ngSwitchCase="'Not Returned'"
+class="text-danger">{{books.Book_ID}} {{books.Book_Name}} {{books.given}}
+</li>
+
+
+</ul>
+
